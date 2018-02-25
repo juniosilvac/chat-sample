@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <div class="container">
-    <router-view/>
+     <router-view/>
+     <the-inputmessage></the-inputmessage>
     </div>
-    <the-inputmessage></the-inputmessage>
   </div>
 </template>
 
