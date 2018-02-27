@@ -1,20 +1,13 @@
 <template>
   <div id="app">
-    <div class="container">
      <router-view/>
-     <the-inputmessage></the-inputmessage>
-    </div>
   </div>
 </template>
 
 <script>
-import TheInputmessage from './the-inputmessage'
 export default {
-  components: {
-    TheInputmessage
-  }
+  name: 'TheContainer'
 }
 </script>
-
 <style lang="sass" src="./assets/sass/app.scss">
 </style>

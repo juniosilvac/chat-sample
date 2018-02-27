@@ -1,44 +1,25 @@
 <template>
-  <div class="panel-body msg_container_base">
-    <sent-message></sent-message>
-    <receive-message></receive-message>
+<div class="container">
+  <message></message>
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Digite a mensagem...">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Enviar</button>
+      </span>
+    </div>
   </div>
 </template>
-
 <script>
-import SentMessage from './sentmessage'
-import ReceiveMessage from './receivemessage'
+import Message from './message'
 export default {
   name: 'Chat',
   components: {
-    SentMessage,
-    ReceiveMessage
+    Message
   }
 }
 </script>
 <style scoped>
-.msg_container_base{
-  background: #e5e5e5;
-  margin: 0;
-  padding: 0 10px 10px;
-  max-height:300px;
-  overflow-x:hidden;
-}
-.msg_container_base::-webkit-scrollbar-track
-{
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    background-color: #F5F5F5;
-}
-
-.msg_container_base::-webkit-scrollbar
-{
-    width: 12px;
-    background-color: #F5F5F5;
-}
-
-.msg_container_base::-webkit-scrollbar-thumb
-{
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-    background-color: #555;
+.container {
+  width: 100%;
 }
 </style>

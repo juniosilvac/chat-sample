@@ -2,8 +2,8 @@ import index from './'
 
 export default [
   {
-    path: '/',
-    name: 'chat.index',
+    path: '/chat',
+    name: 'chat',
     component: index
   }
 ]
